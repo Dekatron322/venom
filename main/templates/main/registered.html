@@ -1,0 +1,274 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+        <!-- Main -->
+
+        <main>
+            <!-- Section -->
+            <section class="section bg-effect bg-no-repeat bg-top-center" style="background-image: url({% static 'assets/img/bg-banner.png' %})">
+                <div class="bg-ef-1"></div>
+                <div class="bg-ef-2"></div>
+                <div class="bg-ef-center"></div>
+                <div class="container position-relative">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 text-center">
+                            <h1>Manage your Portfolio</h1>
+                            <p>View, Transfer, List your Uniques Names</p>
+                            <form class="h-search-form d-flex w-100 border border-gray-300 p-1 rounded-3 bg-body">
+                                <input type="text" placeholder="Input wallet address" value="" class="border-0 rounded-0 shadow-none form-control form-control-sm flex-full bg-transparent">
+                                <button class="btn icon-md btn-border-mode p-0 search-btn rounded-3"><i class="bi bi-search"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+            <!-- Section -->
+            <section class="py-6">
+                <div class="container">
+                    <div class="row align-items-start">
+                        
+                        <div class="col">
+                            <div class="row pb-3 align-items-center">
+                                <div class="col-12">
+                                    <button class="btn btn-border-mode rounded-pill d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#explor_sidbar_filter" aria-controls="explor_sidbar_filter"><i class="btn-icon bi-funnel-fill"></i> Filter</button>
+                                    <p class="m-0 d-none d-lg-block">Total 0004 Items</p>
+                                </div>
+                                
+                            </div>
+                            <div class="row g-3">
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="product-card">
+                                        <div class="product-card-user">
+                                            <div class="avatar-group">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Martin"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-1.jpg' %}" title="" alt="">
+                                                        <div class="avatar-status text-primary border-0"><i class="bi bi-check-circle-fill"></i></div>
+                                                    </a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Larisa"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-3.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew" class="avatar-text rounded-circle bg-primary text-white">+ 5</a></div>
+                                            </div>
+                                            <div class="dropdown ms-auto">
+                                                <button class="bid-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    
+                                                    
+                                                    <li><a class="dropdown-item" href="#">View on OpenSea</a></li>
+                                                    <li><a class="dropdown-item" href="#">Refresh Metadata</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-8.jpg' %}" title="" alt=""></a>
+                                            <div class="product-card-timer">
+                                                <ul class="countdown bg-dark bg-opacity-25 blur-md" data-countdown-date="12/30/2023 12:00:00">
+                                                    <li>
+                                                        <div data-days></div><span>Days</span></li>
+                                                    <li>
+                                                        <div data-hours></div><span>Hours</span></li>
+                                                    <li>
+                                                        <div data-minutes></div><span>minutes</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Manage Name</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="product-card">
+                                        <div class="product-card-user">
+                                            <div class="avatar-group">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Martin"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-1.jpg' %}" title="" alt="">
+                                                        <div class="avatar-status text-primary border-0"><i class="bi bi-check-circle-fill"></i></div>
+                                                    </a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Larisa"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-3.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew" class="avatar-text rounded-circle bg-primary text-white">+ 5</a></div>
+                                            </div>
+                                            <div class="dropdown ms-auto">
+                                                <button class="bid-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    
+                                                    
+                                                    <li><a class="dropdown-item" href="#">View on OpenSea</a></li>
+                                                    <li><a class="dropdown-item" href="#">Refresh Metadata</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-1.jpg' %}" title="" alt=""></a>
+                                            <div class="product-card-timer">
+                                                <ul class="countdown bg-dark bg-opacity-25 blur-md" data-countdown-date="12/30/2023 12:00:00">
+                                                    <li>
+                                                        <div data-days></div><span>Days</span></li>
+                                                    <li>
+                                                        <div data-hours></div><span>Hours</span></li>
+                                                    <li>
+                                                        <div data-minutes></div><span>minutes</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Manage Name</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="product-card">
+                                        <div class="product-card-user">
+                                            <div class="avatar-group">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Martin"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-1.jpg' %}" title="" alt="">
+                                                        <div class="avatar-status text-primary border-0"><i class="bi bi-check-circle-fill"></i></div>
+                                                    </a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Larisa"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-3.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew" class="avatar-text rounded-circle bg-primary text-white">+ 5</a></div>
+                                            </div>
+                                            <div class="dropdown ms-auto">
+                                                <button class="bid-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    
+                                                    <li><a class="dropdown-item" href="#">View on OpenSea</a></li>
+                                                    <li><a class="dropdown-item" href="#">Refresh Metadata</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-2.jpg' %}" title="" alt=""></a>
+                                            <div class="product-card-timer">
+                                                <ul class="countdown bg-dark bg-opacity-25 blur-md" data-countdown-date="12/30/2023 12:00:00">
+                                                    <li>
+                                                        <div data-days></div><span>Days</span></li>
+                                                    <li>
+                                                        <div data-hours></div><span>Hours</span></li>
+                                                    <li>
+                                                        <div data-minutes></div><span>minutes</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Manage Name</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-lg-3">
+                                    <div class="product-card">
+                                        <div class="product-card-user">
+                                            <div class="avatar-group">
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Martin"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-1.jpg' %}" title="" alt="">
+                                                        <div class="avatar-status text-primary border-0"><i class="bi bi-check-circle-fill"></i></div>
+                                                    </a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Larisa"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs">
+                                                    <a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-3.jpg' %}" title="" alt=""></a>
+                                                </div>
+                                                <div class="avatar avatar-xs"><a href="#" data-bs-toggle="tooltip" data-bs-original-title="Nancy Drew" class="avatar-text rounded-circle bg-primary text-white">+ 5</a></div>
+                                            </div>
+                                            <div class="dropdown ms-auto">
+                                                <button class="bid-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-three-dots-vertical"></i></button>
+                                                <ul class="dropdown-menu dropdown-menu-end">
+                                                    
+                                                    <li><a class="dropdown-item" href="#">View on OpenSea</a></li>
+                                                    <li><a class="dropdown-item" href="#">Refresh Metadata</a></li>
+                                                    <li><a class="dropdown-item" href="#">Share</a></li>
+                                                    <li><a class="dropdown-item" href="#">Report</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-3.jpg' %}" title="" alt=""></a>
+                                            <div class="product-card-timer">
+                                                <ul class="countdown bg-dark bg-opacity-25 blur-md" data-countdown-date="12/30/2023 12:00:00">
+                                                    <li>
+                                                        <div data-days></div><span>Days</span></li>
+                                                    <li>
+                                                        <div data-hours></div><span>Hours</span></li>
+                                                    <li>
+                                                        <div data-minutes></div><span>minutes</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Manage Name</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+        </main>
+        <!-- End Main -->
+{% endblock %}

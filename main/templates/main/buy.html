@@ -1,0 +1,81 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block content %}
+
+<br><br><br><br><br><br>
+        <main>
+            <!-- Cover -->
+            
+            <!-- End Cover -->
+            <!-- Section -->
+            <section class="section">
+                <div class="container">
+                    <div class="row gy-5">
+                        <div class="col-md-8">
+                            <div class="card border-gray-200 rounded-3">
+                                <div class="card-body p-lg-4">
+                                    <form>
+                                        <div class="row gy-4">
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            
+                                            <div class="col-6">
+                                                <label class="form-label">Registration Year</label>
+                                                <div class="d-flex">
+                                                    <input type="number" name="Size" class="form-control me-2" placeholder="1">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <label class="form-label">Price/Yr</label>
+                                                <div class="d-flex">
+                                                    <input type="text" name="Size" class="form-control me-2" placeholder="18">
+                                                    
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label">Total Price(venom)</label>
+                                                <input type="text" name="Alternative" class="form-control" placeholder="18">
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="w-100 btn btn-primary">1. Connect to Metamask</button>
+                                                
+                                            </div>
+                                            <div class="col-6">
+                                                <button class="w-100 btn btn-success">2. Buy Name</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product-card">
+                                <div class="product-card-media">
+                                    <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-8.jpg' %}" title="" alt=""></a>
+                                </div>
+                                <div class="product-card-body">
+                                    <div class="product-title d-flex align-items-center">
+                                        <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space.venom</a></h6>
+                                        <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                    </div>
+                                    <div class="product-actions d-flex fs-sm">
+                                        <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 Venom</span></span>
+                                        </div>
+                                        <div class="price col lh-sm"><span class="m-0">Reg. Year <span class="text-body fw-400 w-100 d-block">2 years</span></span>
+                                        </div>
+                                    </div>
+                                    <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Buy Now</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End Section -->
+        </main>
+        <!-- End Main -->
+{% endblock %}

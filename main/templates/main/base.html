@@ -1,0 +1,466 @@
+{% load static %}
+<!doctype html>
+<html lang="zxx" data-bs-theme="dark">
+
+
+<head>
+    <!-- metas -->
+    <meta charset="utf-8">
+    <meta name="author" content="pxdraft">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="keywords" content="Maffei – NFT Marketplace Bootstrap 5 Templates">
+    <meta name="description" content="Maffei – NFT Marketplace Bootstrap 5 Templates">
+    <!-- title -->
+    <title>Venom id – Venom naming service and marketplace on venom chain</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- CSS Template -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Skippy & Prload -->
+    <!-- skippy -->
+    <a id="skippy" class="skippy visually-hidden-focusable overflow-hidden" href="#content">
+        <div class="container"><span class="u-skiplink-text">Skip to main content</span></div>
+    </a>
+    <!-- End skippy -->
+    <!-- Preload -->
+    <div id="loading" class="loading-preloader bg-dark">
+        <div class="loading-preloader-in">
+            <div class="spinner-04"><span class="text-primary"></span></div>
+        </div>
+    </div>
+    <!-- End Preload -->
+    <!-- Edn Skippy & Prload -->
+    <!-- 
+    ========================
+        Wrapper 
+    ========================
+    -->
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="main-header fixed-top headroom border-bottom border-gray-200 @@classes">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container align-items-center">
+                    <div class="logo">
+                        <a class="navbar-brand" href="index.html"><img class="logo-dark" src="{% static 'assets/img/vnsa.png' %}" title="" alt=""> <img class="logo-light" src="{% static 'assets/img/vnsb.png' %}" title="" alt=""></a>
+                    </div>
+                    <div class="offcanvas nav-offcanvas offcanvas-start" tabindex="-1" id="offcanvas_Header_01" aria-labelledby="offcanvas_Header_01">
+                        <div class="offcanvas-header flex-wrap border-bottom border-gray-200">
+                            <div class="offcanvas-title">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/vnsb.png' %}" title="" alt=""></div>
+                                    <div class="col ps-3">
+                                        <h6 class="mb-0">Jupiter</h6><span class="fs-xs fw-400">@jupiter_0202</span></div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvas_Header_01" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav mx-auto">
+                                <li class="nav-item dropdown dropdown-hover"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Home</a>
+                                    <ul class="dropdown-menu start">
+                                        <li><a class="dropdown-item" href="index.html">Home Option 01</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+                                    <ul class="dropdown-menu start">
+                                        <li><a class="dropdown-item" href="explore.html">Explore</a></li>
+                                        <li><a class="dropdown-item" href="explore-details.html">Explore Details</a></li>
+                                        <li><a class="dropdown-item" href="activity.html">Explore Activity</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Collectors</a>
+                                    <ul class="dropdown-menu start">
+                                        <li><a class="dropdown-item" href="collection.html">My Collection</a></li>
+                                        <li><a class="dropdown-item" href="collections-details.html">Details</a></li>
+                                        <li><a class="dropdown-item" href="collections-details-activity.html">Activity</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Account</a>
+                                    <ul class="dropdown-menu start">
+                                        <li><a class="dropdown-item" href="edit-profile.html">Edit Profile</a></li>
+                                        <li><a class="dropdown-item" href="view-profile.html">View Profile</a></li>
+                                        <li><a class="dropdown-item" href="profile-activity.html">View Activity</a></li>
+                                        <li><a class="dropdown-item" href="profile-favorites.html">View Favorites</a></li>
+                                        <li><a class="dropdown-item" href="add-nft.html">Add NFT's</a></li>
+                                        <li><a class="dropdown-item" href="connect-wallet.html">Connect Wallet</a></li>
+                                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                                        <li><a class="dropdown-item" href="sign-up.html">Sign Up</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown dropdown-hover"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+                                    <ul class="dropdown-menu start">
+                                        <li><a class="dropdown-item" href="about.html">About</a></li>
+                                        <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                                        <li><a class="dropdown-item" href="blog-single.html">Single Blog</a></li>
+                                        <li><a class="dropdown-item" href="help.html">Help</a></li>
+                                        <li><a class="dropdown-item" href="help-articles.html">Help Details</a></li>
+                                        <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offcanvas-footer"></div>
+                    </div>
+                    <div class="header-end d-flex justify-content-end">
+                        <!-- Search -->
+                        <div class="d-none d-lg-block h-col h-search-toggle"><a class="h-search-icon h-icon" data-bs-toggle="offcanvas" href="#header_search_bar" role="button" aria-controls="header_search_bar"><i class="bi bi-search"></i></a></div>
+                        <!-- Notification -->
+                        <div class="d-none d-lg-block h-col h-notification"><a class="h-notification-icon h-icon" data-bs-toggle="offcanvas" href="#header_notification_bar" role="button" aria-controls="header_notification_bar"><i class="bi bi-bell"></i> <sup>10</sup></a></div>
+                        <!-- User -->
+                        <div class="d-none d-lg-block h-col h-user"><a class="h-user-icon h-icon" data-bs-toggle="offcanvas" href="#header_user_bar" role="button" aria-controls="header_user_barLabel"><i class="bi-person-circle"></i></a></div>
+                        <!-- Switch -->
+                        <div class="h-col h-switch dropdown">
+                            <button class="theme-switch h-icon dropdown-toggle" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"><span class="bi my-1 theme-icon-active"><i class="bi-circle-half"></i> </span><span class="d-none">Toggle theme</span></button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme">
+                                <li>
+                                    <button type="button" class="dropdown-item" data-bs-theme-value="light"><span class="bi me-2 opacity-50 theme-icon"><i class="bi-sun-fill"></i> </span>Light <span class="bi ms-auto d-none"><i class="bi-check2"></i></span></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item" data-bs-theme-value="dark"><span class="bi me-2 opacity-50 theme-icon"><i class="bi-moon-stars-fill"></i> </span>Dark <span class="bi ms-auto d-none"><i class="bi-check2"></i></span></button>
+                                </li>
+                                <li>
+                                    <button type="button" class="dropdown-item active" data-bs-theme-value="auto"><span class="bi me-2 opacity-50 theme-icon"><i class="bi-circle-half"></i> </span>Auto <span class="bi ms-auto d-none"><i class="bi-check2"></i></span></button>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Mobile Toggle -->
+                        <div class="h-col h-toggler d-xl-none">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas_Header_01" aria-controls="offcanvas_Header_01"><span class="px-navbar-toggler-icon"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Mobile Headr -->
+        <div class="mobile-header d-lg-none">
+            <!-- Search -->
+            <div class="h-col h-search-toggle"><a class="h-search-icon h-icon" data-bs-toggle="offcanvas" href="#header_search_bar" role="button" aria-controls="header_search_bar"><i class="bi bi-search"></i> <span>SEARCH</span></a></div>
+            <!-- Notification -->
+            <div class="h-col h-notification"><a class="h-notification-icon h-icon" data-bs-toggle="offcanvas" href="#header_notification_bar" role="button" aria-controls="header_notification_bar"><i class="bi bi-bell"></i> <span>Activity</span></a></div>
+            <!-- User -->
+            <div class="h-col h-user"><a class="h-user-icon h-icon" data-bs-toggle="offcanvas" href="#header_user_bar" role="button" aria-controls="header_user_barLabel"><i class="bi-person-circle"></i> <span>ACCOUNT</span></a></div>
+        </div>
+        <!-- User -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="header_user_bar" aria-labelledby="header_user_barLabel">
+            <div class="offcanvas-header border-bottom border-gray-300">
+                <div class="offcanvas-title" id="header_user_barLabel">
+                    <div class="d-flex align-items-center">
+                        <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></div>
+                        <div class="col ps-3">
+                            <h6 class="mb-0">Jupiter</h6><span class="fs-xs fw-400">@jupiter_0202</span></div>
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-subtract"></i> <span class="text-truncate ps-3">653211545655652112</span></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><span class="fw-400 mb-3 d-block">Balance</span><div class="d-flex"><div class="icon-sm"><i class="cf cf-etc h4 fw-400 m-0"></i></div><div class="col ps-3"><h4 class="m-0">3,89 ETH</h4></div></div></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-person"></i> <span class="ps-3">My Account</span></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-gear"></i> <span class="ps-3">Setting</span></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-bookmark"></i> <span class="ps-3">Saved</span></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-clock-history"></i> <span class="ps-3">Your Activity</span></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-bag-check"></i> <span class="ps-3">Report a Problem</span></a></li>
+                    <li class="mb-2"><a class="btn btn-sm text-start btn-border-mode rounded-3 p-3 w-100" href="#"><i class="bi-lock"></i> <span class="ps-3">Log Out</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End User -->
+        <!-- Search -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="header_search_bar" aria-labelledby="header_search_barLabel">
+            <div class="offcanvas-header border-bottom border-gray-300">
+                <h5 class="offcanvas-title" id="header_search_barLabel">Search</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <form class="h-search-form d-flex w-100 border border-gray-300 p-1 rounded-3">
+                    <input type="text" placeholder="Search Here" value="" class="border-0 rounded-0 shadow-none form-control form-control-sm flex-full">
+                    <button class="btn icon-md btn-border-mode p-0 search-btn rounded-3"><i class="bi bi-search"></i></button>
+                </form>
+                <div class="pt-4">
+                    <h6 class="mb-3 text-uppercase fs-sm fw-500">Latest Search</h6>
+                    <ul class="list-unstyled d-flex flex-wrap">
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Latest NFT's <span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Top NFT's <span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Low <span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Offers <span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Top Sale <span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Authors<span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                        <li class="me-2 mb-2"><a class="btn btn-sm btn-border-mode rounded-3" href="#">Best Seller<span class="btn-icon bi-graph-up-arrow"></span></a></li>
+                    </ul>
+                </div>
+                <div class="pt-4">
+                    <h6 class="mb-3 text-uppercase fs-sm fw-500">Top Nft's</h6>
+                    <div class="swiper-hover-arrow position-relative">
+                        <div class="swiper swiper-container" data-swiper-options='{
+                                  "slidesPerView": 1.80,
+                                  "spaceBetween": 15,
+                                  "loop": true,
+                                  "pagination": {
+                                    "el": ".swiper-pagination",
+                                    "clickable": true
+                                    }
+                            }'>
+                            <div class="swiper-wrapper">
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-8.jpg' %}" title="" alt=""></a>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Buy Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-1.jpg' %}" title="" alt=""></a>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Buy Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-2.jpg' %}" title="" alt=""></a>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Buy Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                                <!-- Product Box -->
+                                <div class="swiper-slide">
+                                    <div class="product-card">
+                                        <div class="product-card-media">
+                                            <a href="#"><img class="product-card-img" src="{% static 'assets/img/product-3.jpg' %}" title="" alt=""></a>
+                                        </div>
+                                        <div class="product-card-body">
+                                            <div class="product-title d-flex align-items-center">
+                                                <h6 class="m-0"><a class="text-reset stretched-linka" href="#">Space Shapes #3</a></h6>
+                                                <button class="like-btn btn btn-primary-soft p-0 rounded-circle avatar avatar-xs ms-auto"><i class="avatar-text fi-heart"></i></button>
+                                            </div>
+                                            <div class="product-actions d-flex fs-sm">
+                                                <div class="price col lh-sm"><span class="m-0">Mirrored <span class="text-body fw-400 w-100 d-block">18 ETH</span></span>
+                                                </div>
+                                                <div class="price col lh-sm"><span class="m-0">3.99 ETH <span class="text-body fw-400 w-100 d-block">1/1</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="product-card-cart"><a class="btn btn-primary w-100" href="#">Buy Now</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Product Box -->
+                            </div>
+                            <div class="swiper-pagination mt-4 position-relative bottom-0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Search -->
+        <!-- Notifications -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="header_notification_bar" aria-labelledby="header_notification_barLabel">
+            <div class="offcanvas-header border-bottom border-gray-300">
+                <h5 class="offcanvas-title" id="header_notification_barLabel">Notification</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div class="p-3 border border-gray-300 rounded-3 d-flex position-relative mb-3">
+                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-1.jpg' %}" title="" alt=""></div>
+                    <div class="col ps-3 d-flex align-items-center">
+                        <div class="col pe-3">
+                            <h6 class="mb-1"><a href="#" class="stretched-link text-reset">Drunk Robots</a></h6><span>sold for 2.515 ETH</span> <span class="fs-xs w-100 d-block">25 minutes 10 seconds ago</span></div>
+                        <div class="icon btn btn-border-mode p-0 rounded-3"><i class="bi-bag-check"></i></div>
+                    </div>
+                </div>
+                <div class="p-3 border border-gray-300 rounded-3 d-flex position-relative mb-3">
+                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></div>
+                    <div class="col ps-3 d-flex align-items-center">
+                        <div class="col pe-3">
+                            <h6 class="mb-1"><a href="#" class="stretched-link text-reset">Drunk Robots</a></h6><span>listed by @donsee_04</span> <span class="fs-xs w-100 d-block">48 minutes 35 seconds ago</span></div>
+                        <div class="icon btn btn-border-mode p-0 rounded-3"><i class="bi-check-lg"></i></div>
+                    </div>
+                </div>
+                <div class="p-3 border border-gray-300 rounded-3 d-flex position-relative mb-3">
+                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-3.jpg' %}" title="" alt=""></div>
+                    <div class="col ps-3 d-flex align-items-center">
+                        <div class="col pe-3">
+                            <h6 class="mb-1"><a href="#" class="stretched-link text-reset">Drunk Robots</a></h6><span>Bid by @obbabe_01</span> <span class="fs-xs w-100 d-block">48 minutes 35 seconds ago</span></div>
+                        <div class="icon btn btn-border-mode p-0 rounded-3"><i class="bi-pin"></i></div>
+                    </div>
+                </div>
+                <div class="p-3 border border-gray-300 rounded-3 d-flex position-relative mb-3">
+                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-1.jpg' %}" title="" alt=""></div>
+                    <div class="col ps-3 d-flex align-items-center">
+                        <div class="col pe-3">
+                            <h6 class="mb-1"><a href="#" class="stretched-link text-reset">Drunk Robots</a></h6><span>sold for 2.515 ETH</span> <span class="fs-xs w-100 d-block">25 minutes 10 seconds ago</span></div>
+                        <div class="icon btn btn-border-mode p-0 rounded-3"><i class="bi-bag-check"></i></div>
+                    </div>
+                </div>
+                <div class="p-3 border border-gray-300 rounded-3 d-flex position-relative mb-3">
+                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-2.jpg' %}" title="" alt=""></div>
+                    <div class="col ps-3 d-flex align-items-center">
+                        <div class="col pe-3">
+                            <h6 class="mb-1"><a href="#" class="stretched-link text-reset">Drunk Robots</a></h6><span>listed by @donsee_04</span> <span class="fs-xs w-100 d-block">48 minutes 35 seconds ago</span></div>
+                        <div class="icon btn btn-border-mode p-0 rounded-3"><i class="bi-check-lg"></i></div>
+                    </div>
+                </div>
+                <div class="p-3 border border-gray-300 rounded-3 d-flex position-relative mb-3">
+                    <div class="avatar"><img class="avatar-img rounded-circle" src="{% static 'assets/img/avatar-3.jpg' %}" title="" alt=""></div>
+                    <div class="col ps-3 d-flex align-items-center">
+                        <div class="col pe-3">
+                            <h6 class="mb-1"><a href="#" class="stretched-link text-reset">Drunk Robots</a></h6><span>Bid by @obbabe_01</span> <span class="fs-xs w-100 d-block">48 minutes 35 seconds ago</span></div>
+                        <div class="icon btn btn-border-mode p-0 rounded-3"><i class="bi-pin"></i></div>
+                    </div>
+                </div>
+            </div>
+            <div class="offcanvas-footer d-flex p-3 border-top border-gray-300"><a class="btn btn-mode mx-3 col" href="#">Manage</a> <a class="btn btn-danger mx-3 col" href="#">Clear All</a></div>
+        </div>
+        <!-- End Notifications -->
+        <!-- End Header -->
+        <!-- Main -->
+
+        {% block content %}
+
+        {% endblock %}
+
+        <!-- Footer -->
+        <footer class="footer footer-bg bg-body border-top border-gray-300">
+            <div class="py-7 py-md-8 py-lg-10">
+                <div class="container">
+                    <div class="row gy-5">
+                        <div class="col-lg-3 me-auto">
+                            <div class="pb-4"><img class="footer-logo-light" src="{% static 'assets/img/vnsb.png' %}" title="" alt=""> <img class="footer-logo-dark" src="{% static 'assets/img/vnsa.png' %}" title="" alt=""></div>
+                            <p>Crypto collectibles and non-fungible tokens (NFTs). Buy, sell, and discover exclusive digital items.</p>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <h5 class="footer-title-01">Marketplace</h5>
+                            <ul class="list-unstyled footer-link-01 m-0">
+                                <li><a class="" href="#">All NFTs</a></li>
+                                <li><a class="" href="#">New</a></li>
+                                <li><a class="" href="#">Collectibles</a></li>
+                                <li><a class="" href="#">Photography</a></li>
+                                <li><a class="" href="#">Trading Cards</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-6">
+                            <h5 class="footer-title-01">Resources</h5>
+                            <ul class="list-unstyled footer-link-01 m-0">
+                                <li><a class="" href="#">Help Center</a></li>
+                                <li><a class="" href="#">Platform Status</a></li>
+                                <li><a class="" href="#">About Us</a></li>
+                                <li><a class="" href="#">Copyright</a></li>
+                                <li><a class="" href="#">Popular Campaign</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 col-sm-6">
+                            <h5 class="footer-title-01">Stay up to date</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+                            <form>
+                                <div class="d-flex flex-row">
+                                    <input type="email" class="form-control me-2" placeholder="Enter your username">
+                                    <button class="btn btn-primary flex-shrink-0" type="submit"><i class="bi-envelope"></i></button>
+                                </div>
+                                <p class="m-0 mt-2 small">New UI kits or big discounts. Never spam.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container py-5 border-top border-gray-300 border-bottom">
+                <div class="row gy-4 align-items-center">
+                    <div class="col-md-7">
+                        <h4 class="m-0 fw-500 text-center text-md-start">The NEFT Marketplace with everything for everyone.</h4></div>
+                    <div class="col-md-5">
+                        <ul class="nav mx-n2 justify-content-center justify-content-md-end">
+                            <li class="mx-2"><a class="icon-md btn btn-border-mode p-0 rounded-3" href="#"><i class="bi-facebook"></i></a></li>
+                            <li class="mx-2"><a class="icon-md btn btn-border-mode p-0 rounded-3" href="#"><i class="bi-linkedin"></i></a></li>
+                            <li class="mx-2"><a class="icon-md btn btn-border-mode p-0 rounded-3" href="#"><i class="bi-twitter"></i></a></li>
+                            <li class="mx-2"><a class="icon-md btn btn-border-mode p-0 rounded-3" href="#"><i class="bi-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row py-3 gy-3 align-items-center">
+                    <div class="col-md-6">
+                        <ul class="nav justify-content-center justify-content-md-start my-2 links-white small list-unstyled footer-link-01 m-0">
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="">Privace &amp; Policy</a></li>
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="">Faq's</a></li>
+                            <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="">Get a Quote</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <p class="text-white-85 small m-0">© 2023 Maffei is Proudly Powered by <a href="http://pxdraft.com/" target="_blank" class="text-reset">pxdraft</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
+    <!-- 
+    ========================
+       End Wrapper 
+    ========================
+    -->
+    <!-- script start -->
+    <!--bootstrap-->
+    <script src="{% static 'assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js' %}"></script>
+    <!-- swiper JS -->
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <!-- Headroom JS -->
+    <script src="{% static 'assets/vendor/headroom/headroom.min.js' %}"></script>
+    <!-- Timezz JS -->
+    <script src="{% static 'assets/vendor/timezz/timezz.js' %}"></script>
+    <!-- Theme JS -->
+    <script src="{% static 'assets/js/theme.js' %}"></script>
+    <script src="{% static 'assets/js/color-modes.js' %}"></script>
+    <!-- End script start -->
+</body>
+<!-- Mirrored from pxdraft.com/themeforest/maffei/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Mar 2023 18:43:23 GMT -->
+
+</html>
